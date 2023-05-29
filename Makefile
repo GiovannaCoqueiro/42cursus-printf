@@ -6,7 +6,7 @@
 #    By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/24 13:33:56 by gcoqueir          #+#    #+#              #
-#    Updated: 2023/05/29 13:28:35 by gcoqueir         ###   ########.fr        #
+#    Updated: 2023/05/29 14:45:01 by gcoqueir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,10 +15,11 @@ CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
 FILES = ft_printf.c print_char.c print_str.c print_ptr.c print_nbr.c \
 			print_unint.c print_hex.c
-OBJS = $(FILES: .c=.o)
+OBJS = $(FILES:.c=.o)
 NAME = libftprintf.a
 
 all: $(NAME)
+	@echo SUCCESS!!
 
 %.o: %.c
 	$(CC) $(CFLAGS) -I . -c $< -o $@
@@ -27,10 +28,10 @@ $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJS)
+	@$(RM) $(OBJS)
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean clean
 
