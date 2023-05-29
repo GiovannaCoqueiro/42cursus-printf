@@ -6,7 +6,7 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 12:08:35 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 13:10:17 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/05/29 13:46:45 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ int	print_unint(unsigned int nbr)
 	count = 0;
 	if (nbr > 9)
 		count += print_unint(nbr / 10);
-	count += print_char(nbr % 10);
+	count += print_char((nbr % 10) + '0');
 	return (count);
 }

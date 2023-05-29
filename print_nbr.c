@@ -6,7 +6,7 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 12:02:26 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 12:36:29 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/05/29 13:46:30 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ int	print_nbr(int nbr)
 	}
 	if (nbr > 9)
 		count += print_nbr(nbr / 10);
-	count += print_char(nbr % 10);
+	count += print_char((nbr % 10) + '0');
 	return (count);
 }

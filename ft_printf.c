@@ -6,7 +6,7 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:33:49 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 13:20:52 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:02:37 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ static int	convert_variable(va_list list, char c)
 	else if (c == 's')
 		variable_len += print_str(va_arg(list, char *));
 	else if (c == 'p')
-		variable_len += print_ptr(va_arg(list, char *), LOWER_HEX);
+		variable_len += print_ptr(va_arg(list, unsigned long), LOWER_HEX);
 	else if (c == 'd' || c == 'i')
 		variable_len += print_nbr(va_arg(list, int));
 	else if (c == 'u')

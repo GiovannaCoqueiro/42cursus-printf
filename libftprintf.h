@@ -6,7 +6,7 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:39:04 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 13:18:58 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:03:16 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 # define LOWER_HEX "0123456789abcdef"
 
 int	ft_printf(const char *str, ...);
-int	print_char(int c);
+int	print_char(char c);
 int	print_str(char *str);
-int	print_ptr(char *str, char *base);
+int	print_ptr(unsigned long nbr, char *base);
 int	print_nbr(int nbr);
 int	print_unint(unsigned int nbr);
 int	print_hex(unsigned int nbr, char *base);
