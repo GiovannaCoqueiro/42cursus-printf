@@ -6,12 +6,12 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:39:04 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 14:57:16 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/05/29 15:00:29 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <stdarg.h>
 # include <stdlib.h>
