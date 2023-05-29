@@ -6,11 +6,11 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 12:10:14 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 13:18:02 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:57:03 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	print_hex(unsigned int nbr, char *base)
 {

@@ -6,11 +6,11 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/29 11:19:25 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 11:26:44 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/05/29 14:57:27 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	print_str(char *str)
 {
