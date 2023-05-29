@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.c                                        :+:      :+:    :+:   */
+/*   ft_printf_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:33:49 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 19:29:38 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/05/29 19:44:02 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "ft_printf_bonus.h"
 
 static int	convert_variable(va_list list, char c);
+static int	convert_flag(void);
 
 int	ft_printf(const char *str, ...)
 {
@@ -30,7 +31,14 @@ int	ft_printf(const char *str, ...)
 		if (str[index] == '%')
 		{
 			index++;
-			print_count += convert_variable(list, str[index]);
+			if (str[index] == '0' || str[index] == '#' || str[index] == ' '
+				|| str[index] == '+')
+			{
+				print_count += convert_flag();
+				index++;
+			}
+			else
+				print_count += convert_variable(list, str[index]);
 		}
 		else
 			print_count += print_char(str[index]);
@@ -61,4 +69,9 @@ static int	convert_variable(va_list list, char c)
 	else if (c == '%')
 		variable_len += print_char(c);
 	return (variable_len);
+}
+
+static int	convert_flag(void)
+{
+	
 }
