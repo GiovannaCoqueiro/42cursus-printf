@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_zeroflag_bonus.c                             :+:      :+:    :+:   */
+/*   print_char_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/29 19:34:58 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/29 19:36:35 by gcoqueir         ###   ########.fr       */
+/*   Created: 2023/05/29 10:39:55 by gcoqueir          #+#    #+#             */
+/*   Updated: 2023/05/31 14:54:03 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf_bonus.h"
 
-int	print_zeroflag()
+int	print_char(char c)
 {
-
+	write (1, &c, 1);
+	return (1);
 }
