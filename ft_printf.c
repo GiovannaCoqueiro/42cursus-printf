@@ -6,7 +6,7 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:33:49 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/31 17:01:59 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/06/01 07:54:24 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,9 +56,7 @@ static int	convert_variable(va_list list, char *str, int index)
 		count += print_nbr(va_arg(list, int), str, index, 1);
 	else if (str[index] == 'u')
 		count += print_unint(va_arg(list, unsigned int));
-	else if (str[index] == 'x')
-		count += print_hex(va_arg(list, unsigned int), str, index, 1);
-	else if (str[index] == 'X')
+	else if (str[index] == 'x' || str[index] == 'X')
 		count += print_hex(va_arg(list, unsigned int), str, index, 1);
 	else if (str[index] == '%')
 		count += print_char(str[index]);

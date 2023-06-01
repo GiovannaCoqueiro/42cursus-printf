@@ -6,7 +6,7 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:39:04 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/05/31 17:02:57 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/06/01 07:49:46 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdio.h>
 
 # define UPPER_HEX "0123456789ABCDEF"
 # define LOWER_HEX "0123456789abcdef"
