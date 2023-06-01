@@ -8,7 +8,7 @@
 	</h2>
 	<img src="https://github.com/GiovannaCoqueiro/42cursus-printf/assets/115947494/03c0a740-961d-4faa-85b1-5ad052f3acf9" alt=ft_printf badge/>
 	<p align=center>
-    		Inside this repository, you can see all the code that has been created for the ft_printf project, including the mandatory part and part of the bonus part. These files must be compiled into a program named libft.a using a Makefile.
+    		Inside this repository, you can see all the code that has been created for the ft_printf project, including the mandatory part and part of the bonus part. These files must be compiled into a program named libftprintf.a using a Makefile.
 	</p>
 </div>
 
