@@ -6,15 +6,19 @@
 #    By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/05/24 13:33:56 by gcoqueir          #+#    #+#              #
-#    Updated: 2023/05/31 17:00:10 by gcoqueir         ###   ########.fr        #
+#    Updated: 2023/06/01 10:36:06 by gcoqueir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 RM = rm -f
-FILES = ft_printf.c print_char.c print_str.c print_ptr.c print_nbr.c \
-			print_unint.c print_hex.c
+INC = -I./include
+SRCS_DIR = ./srcs
+FILES = $(SRCS_DIR)/ft_printf.c $(SRCS_DIR)/print_char.c \
+			$(SRCS_DIR)/print_str.c $(SRCS_DIR)/print_ptr.c \
+			$(SRCS_DIR)/print_nbr.c $(SRCS_DIR)/print_unint.c \
+			$(SRCS_DIR)/print_hex.c
 OBJS = $(FILES:.c=.o)
 NAME = libftprintf.a
 
@@ -22,7 +26,7 @@ all: $(NAME)
 	@echo SUCCESS!!
 
 %.o: %.c
-	$(CC) $(CFLAGS) -I . -c $< -o $@
+	$(CC) $(CFLAGS) $(INC) -c $< -o $@
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
@@ -37,6 +41,4 @@ fclean: clean
 
 re: fclean all
 
-rebonus: fclean bonus
-
-.PHONY: all bonus clean fclean re rebonus
+.PHONY: all bonus clean fclean re
