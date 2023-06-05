@@ -6,7 +6,7 @@
 /*   By: gcoqueir <gcoqueir@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/24 13:33:49 by gcoqueir          #+#    #+#             */
-/*   Updated: 2023/06/05 10:36:25 by gcoqueir         ###   ########.fr       */
+/*   Updated: 2023/06/05 11:12:31 by gcoqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,9 @@ int	ft_printf(const char *str, ...)
 		if (str[index] == '%')
 		{
 			index++;
-			while (str[index] == '#' || str[index] == ' ' || str[index] == '+')
+			while (str[index] != 'c' && str[index] != 's' && str[index] != 'p'
+				&& str[index] != 'd' && str[index] != 'i' && str[index] != 'u'
+				&& str[index] != 'x' && str[index] != 'X' && str[index] != '%')
 				index++;
 			print_count += convert_variable(list, (char *)str, index);
 		}
