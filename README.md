@@ -31,7 +31,7 @@
 </p>
 
 | Conversion | Description |
-| :--- | :--- |
+| :---: | :---: |
 | <b>c</b> | Displays a character |
 | <b>s</b> | Displays a string |
 | <b>p</b> | Displays a pointer in hexadecimal base |
@@ -50,7 +50,7 @@
 </p>
 
 | Conversion | Description | Conversions used |
-| :--- | :--- | :--- |
+| :---: | :---: | :---: |
 | <b>#</b> | Displays '0x' or '0X' in front of the conversion | x and X |
 | <b>' '</b> | Displays a space (' ') in the front of positive number | d and i |
 | <b>+</b> | Displays a plus sign in the front of positive number | d and i |
