@@ -18,7 +18,7 @@
 	<h2>
 		Final score
 	</h2>
-	<img src= alt=ft_printf grade/>
+	<img src="https://github.com/GiovannaCoqueiro/42cursus-printf/assets/115947494/8c5a9d4c-c2ce-4a23-a148-c27d07f15bba" alt=ft_printf grade/>
 </div>
 
 ---
